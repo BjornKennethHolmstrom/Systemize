@@ -10,7 +10,6 @@ interface Article {
   title: string;
   icon: React.ReactNode;
   description: string;
-  author?: string;
   readingTime: string;
 }
 
@@ -31,7 +30,7 @@ const articles: Article[] = [
   },
   {
     id: 'non-duality',
-    title: 'Non-Duality and Duality: Complementary Views of Reality',
+    title: 'Non-Duality and Duality: The Dance of Perspective',
     icon: <ScrollText className="w-5 h-5" />,
     description: 'Understanding how absolute and relative perspectives work together to provide a complete picture of reality.',
     readingTime: '8 min read'
@@ -42,8 +41,6 @@ const ArticlesSection = () => {
   const [selectedArticle, setSelectedArticle] = useState<string | null>(null);
 
   const renderArticleContent = (articleId: string) => {
-    // This would contain the actual article content
-    // We'll create separate components for each article's content
     switch (articleId) {
       case 'spiral-dynamics':
         return <SpiralDynamicsArticle />;
@@ -57,7 +54,7 @@ const ArticlesSection = () => {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 bg-white p-6 rounded-lg">
       {!selectedArticle ? (
         <>
           <div className="flex justify-between items-center">

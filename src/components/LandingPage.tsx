@@ -94,31 +94,59 @@ const LandingPage = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Part of a Larger Journey</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-semibold mb-2">Spiralize</h3>
-              <p className="text-gray-600">
+              <div className="h-16 mb-4 flex items-center justify-center">
+                <img 
+                  src="/spiralize-logo.svg" 
+                  alt="Spiralize Logo" 
+                  className="h-full w-auto"
+                />
+              </div>
+              <p className="text-gray-600 mb-4">
                 Explore the natural evolution of human consciousness and values.
               </p>
-              <a href="https://spiralize.org" className="text-blue-500 hover:text-blue-600 mt-4 inline-block">
+              <a 
+                href="https://spiralize.org" 
+                className="text-blue-500 hover:text-blue-600 inline-block"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Visit Spiralize →
               </a>
             </Card>
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-semibold mb-2">Systemize</h3>
-              <p className="text-gray-600">
+              <div className="h-16 mb-4 flex items-center justify-center">
+                <img 
+                  src="/systemize-logo.svg" 
+                  alt="Systemize Logo" 
+                  className="h-full w-auto"
+                />
+              </div>
+              <p className="text-gray-600 mb-4">
                 Develop natural systems thinking through exploration and practice.
               </p>
-              <span className="text-blue-500 mt-4 inline-block">
+              <span className="text-blue-500">
                 You are here
               </span>
             </Card>
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-semibold mb-2">Sacralize</h3>
-              <p className="text-gray-600">
+              <div className="h-16 mb-4 flex items-center justify-center">
+                <img 
+                  src="/sacralize-logo.svg" 
+                  alt="Sacralize Logo" 
+                  className="h-full w-auto"
+                />
+              </div>
+              <p className="text-gray-600 mb-4">
                 Discover the patterns and principles of sacred geometry.
               </p>
-              <a href="https://sacralize.org" className="text-blue-500 hover:text-blue-600 mt-4 inline-block">
+              <a 
+                href="https://sacralize.org" 
+                className="text-blue-500 hover:text-blue-600 inline-block"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Visit Sacralize →
               </a>
             </Card>
