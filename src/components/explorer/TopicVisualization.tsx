@@ -4,6 +4,8 @@ import { StreamData } from '@/lib/explorer/types';
 import FlowVisualization from './FlowVisualization';
 import BeliefSystemsVisualization from './BeliefSystemsVisualization';
 import DecisionMakingVisualization from './DecisionMakingVisualization';
+import EcologicalVisualization from './EcologicalVisualization';
+import ValueSystemsVisualization from './ValueSystemsVisualization';
 import ViewSwitcher from './ViewSwitcher';
 
 interface TopicVisualizationProps {
@@ -26,7 +28,9 @@ const TopicVisualization = ({
   // Define which topics have special visualizations
   const specialViews = {
     'belief-systems': 'Network View',
-    'decision-making': 'Web View'
+    'decision-making': 'Web View',
+    'ecological-thinking': 'Garden View',
+    'value-systems': 'Crystal View'
   } as const;
 
   // If topic has a special view, show the view switcher
@@ -57,6 +61,22 @@ const TopicVisualization = ({
       case 'decision-making':
         return (
           <DecisionMakingVisualization
+            zoomLevel={zoomLevel}
+            onZoomIn={onZoomIn}
+            onZoomOut={onZoomOut}
+          />
+        );
+      case 'ecological-thinking':
+        return (
+          <EcologicalVisualization
+            zoomLevel={zoomLevel}
+            onZoomIn={onZoomIn}
+            onZoomOut={onZoomOut}
+          />
+        );
+      case 'value-systems':
+        return (
+          <ValueSystemsVisualization
             zoomLevel={zoomLevel}
             onZoomIn={onZoomIn}
             onZoomOut={onZoomOut}

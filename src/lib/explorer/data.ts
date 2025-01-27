@@ -1,6 +1,176 @@
 import { StreamData } from './types';
 
 export const explorerData: Record<string, StreamData> = {
+  'value-systems': {
+    title: "Value Systems",
+    description: "Understanding how core values manifest through principles and practices",
+    stream1: {
+      name: "Core Values",
+      color: "#3b82f6",
+      concepts: [
+        {
+          id: "fundamental",
+          x: 300,
+          y: 130,
+          label: "Fundamental Values",
+          reflectionPrompts: [
+            "How do core values shape our decisions and actions?",
+            "What makes a value fundamental vs derived?",
+            "How do values evolve while maintaining their essence?"
+          ],
+          examples: [
+            "Love as a foundational force",
+            "Truth as a guiding principle",
+            "Justice as a core value"
+          ],
+          insights: "Core values provide the foundation for derived principles and practical applications."
+        }
+      ]
+    },
+    stream2: {
+      name: "Expressions",
+      color: "#8b5cf6",
+      concepts: [
+        {
+          id: "manifestation",
+          x: 400,
+          y: 200,
+          label: "Cultural Expressions",
+          reflectionPrompts: [
+            "How do values manifest in different cultures?",
+            "What role do institutions play in value expression?",
+            "How can we align systems with core values?"
+          ],
+          examples: [
+            "Educational systems",
+            "Healthcare practices",
+            "Legal frameworks"
+          ],
+          insights: "Values find expression through cultural institutions and practices."
+        }
+      ]
+    },
+    transcendence: "Integrated Value Systems"
+  },
+  'decision-making': {
+    title: "Decision Making",
+    description: "Understanding how different factors influence our decisions and choices",
+    stream1: {
+      name: "Conscious Processing",
+      color: "#3b82f6",
+      concepts: [
+        {
+          id: "rational",
+          x: 200,
+          y: 150,
+          label: "Rational Analysis",
+          reflectionPrompts: [
+            "How do we balance logic with other decision-making factors?",
+            "When is rational analysis most useful?",
+            "What are the limits of pure rationality?"
+          ],
+          examples: [
+            "Cost-benefit analysis",
+            "Strategic planning",
+            "Risk assessment"
+          ],
+          insights: "Rational analysis provides structure but works best when integrated with other ways of knowing."
+        }
+      ]
+    },
+    stream2: {
+      name: "Unconscious Processing",
+      color: "#8b5cf6",
+      concepts: [
+        {
+          id: "intuitive",
+          x: 400,
+          y: 200,
+          label: "Intuitive Judgment",
+          reflectionPrompts: [
+            "How does intuition complement rational thinking?",
+            "When should we trust our gut feelings?",
+            "How can we develop better intuition?"
+          ],
+          examples: [
+            "Expert decision-making",
+            "Creative problem-solving",
+            "Emergency responses"
+          ],
+          insights: "Intuition draws on deep experience and pattern recognition beyond conscious awareness."
+        }
+      ]
+    },
+    transcendence: "Integrated Decision Making"
+  },
+  'belief-systems': {
+    title: "Belief Systems",
+    description: "Exploring different approaches to understanding existence and reality",
+    stream1: {
+      name: "Traditional Ways of Knowing",
+      color: "#8b5cf6",
+      concepts: [
+        {
+          id: "mystical",
+          x: 200,
+          y: 165,
+          label: "Mystical Experience",
+          reflectionPrompts: [
+            "How do direct experiences shape our understanding of reality?",
+            "What role does personal experience play in knowledge?",
+            "How can subjective experiences inform objective understanding?"
+          ],
+          examples: [
+            "Meditation experiences",
+            "Religious revelations",
+            "Peak experiences"
+          ],
+          insights: "Direct experience offers unique insights that complement other ways of knowing."
+        },
+        {
+          id: "traditional",
+          x: 300,
+          y: 130,
+          label: "Traditional Knowledge",
+          reflectionPrompts: [
+            "How do traditional systems preserve and transmit wisdom?",
+            "What can we learn from ancient understanding?",
+            "How do different cultures approach similar questions?"
+          ],
+          examples: [
+            "Indigenous knowledge systems",
+            "Religious traditions",
+            "Cultural practices"
+          ],
+          insights: "Traditional knowledge systems often contain deep wisdom about human experience and reality."
+        }
+      ]
+    },
+    stream2: {
+      name: "Modern Approaches",
+      color: "#22c55e",
+      concepts: [
+        {
+          id: "scientific",
+          x: 350,
+          y: 200,
+          label: "Scientific Method",
+          reflectionPrompts: [
+            "How does empirical observation help us understand reality?",
+            "What are the limits of scientific knowledge?",
+            "How can science and other ways of knowing complement each other?"
+          ],
+          examples: [
+            "Physics theories",
+            "Cosmological models",
+            "Empirical research"
+          ],
+          insights: "Scientific methods provide powerful tools for understanding reality while acknowledging their own limitations."
+        }
+      ]
+    },
+    transcendence: "Integrated Understanding"
+  },
   'science-spirituality': {
     title: "Science and Spirituality",
     description: "Exploring the convergence of empirical observation and inner wisdom",
@@ -64,12 +234,28 @@ export const explorerData: Record<string, StreamData> = {
             "Mind-body healing research"
           ],
           insights: "The study of consciousness bridges objective science and subjective experience."
+        },
+        {
+          id: "spiritual-insight",
+          x: 400,  // Positioned between Quantum Reality and Consciousness
+          y: 200,  // Slightly below Quantum Reality
+          label: "Spiritual Insight",
+          reflectionPrompts: [
+            "How do direct mystical experiences inform our understanding of reality?",
+            "What role do altered states play in gaining deeper insights?",
+            "How can we integrate spiritual insights with scientific understanding?"
+          ],
+          examples: [
+            "Deep meditative states",
+            "Psychedelic experiences",
+            "Mystical revelations"
+          ],
+          insights: "Direct experiential insights can reveal aspects of reality that complement scientific understanding."
         }
       ]
     },
     transcendence: "Unified Understanding"
   },
-  
   'ethics-technology': {
     title: "Ethics and Technology",
     description: "Examining the intersection of moral principles and technological advancement",
@@ -121,7 +307,6 @@ export const explorerData: Record<string, StreamData> = {
     },
     transcendence: "Ethical Innovation"
   },
-
   'individual-collective': {
     title: "Individual and Collective",
     description: "Understanding the dynamic between personal growth and social evolution",
@@ -241,7 +426,6 @@ export const explorerData: Record<string, StreamData> = {
     },
     transcendence: "Adaptive Complexity"
   },
-
   'art-science': {
     title: "Art and Science",
     description: "Bridging creative expression and systematic inquiry",
@@ -310,123 +494,55 @@ export const explorerData: Record<string, StreamData> = {
     },
     transcendence: "Holistic Understanding"
   },
-  'belief-systems': {
-    title: "Belief Systems",
-    description: "Exploring different approaches to understanding existence and reality",
+  'ecological-thinking': {
+    title: "Ecological Thinking",
+    description: "Understanding the interconnected nature of living systems",
     stream1: {
-      name: "Traditional Ways of Knowing",
-      color: "#8b5cf6",
-      concepts: [
-        {
-          id: "mystical",
-          x: 200,
-          y: 165,
-          label: "Mystical Experience",
-          reflectionPrompts: [
-            "How do direct experiences shape our understanding of reality?",
-            "What role does personal experience play in knowledge?",
-            "How can subjective experiences inform objective understanding?"
-          ],
-          examples: [
-            "Meditation experiences",
-            "Religious revelations",
-            "Peak experiences"
-          ],
-          insights: "Direct experience offers unique insights that complement other ways of knowing."
-        },
-        {
-          id: "traditional",
-          x: 300,
-          y: 130,
-          label: "Traditional Knowledge",
-          reflectionPrompts: [
-            "How do traditional systems preserve and transmit wisdom?",
-            "What can we learn from ancient understanding?",
-            "How do different cultures approach similar questions?"
-          ],
-          examples: [
-            "Indigenous knowledge systems",
-            "Religious traditions",
-            "Cultural practices"
-          ],
-          insights: "Traditional knowledge systems often contain deep wisdom about human experience and reality."
-        }
-      ]
-    },
-    stream2: {
-      name: "Modern Approaches",
+      name: "Natural Systems",
       color: "#22c55e",
       concepts: [
         {
-          id: "scientific",
-          x: 350,
-          y: 200,
-          label: "Scientific Method",
+          id: "ecosystems",
+          x: 300,
+          y: 130,
+          label: "Ecosystem Balance",
           reflectionPrompts: [
-            "How does empirical observation help us understand reality?",
-            "What are the limits of scientific knowledge?",
-            "How can science and other ways of knowing complement each other?"
+            "How do natural systems maintain balance?",
+            "What can we learn from ecosystem resilience?",
+            "How do different parts of an ecosystem support each other?"
           ],
           examples: [
-            "Physics theories",
-            "Cosmological models",
-            "Empirical research"
+            "Forest ecosystems",
+            "Marine food webs",
+            "Soil microbiome"
           ],
-          insights: "Scientific methods provide powerful tools for understanding reality while acknowledging their own limitations."
-        }
-      ]
-    },
-    transcendence: "Integrated Understanding"
-  },
-  'decision-making': {
-    title: "Decision Making",
-    description: "Understanding how different factors influence our decisions and choices",
-    stream1: {
-      name: "Conscious Processing",
-      color: "#3b82f6",
-      concepts: [
-        {
-          id: "rational",
-          x: 200,
-          y: 150,
-          label: "Rational Analysis",
-          reflectionPrompts: [
-            "How do we balance logic with other decision-making factors?",
-            "When is rational analysis most useful?",
-            "What are the limits of pure rationality?"
-          ],
-          examples: [
-            "Cost-benefit analysis",
-            "Strategic planning",
-            "Risk assessment"
-          ],
-          insights: "Rational analysis provides structure but works best when integrated with other ways of knowing."
+          insights: "Natural systems demonstrate sustainable cycles of resource use and renewal."
         }
       ]
     },
     stream2: {
-      name: "Unconscious Processing",
+      name: "Human Integration",
       color: "#8b5cf6",
       concepts: [
         {
-          id: "intuitive",
+          id: "adaptation",
           x: 400,
           y: 200,
-          label: "Intuitive Judgment",
+          label: "Adaptive Design",
           reflectionPrompts: [
-            "How does intuition complement rational thinking?",
-            "When should we trust our gut feelings?",
-            "How can we develop better intuition?"
+            "How can human systems better mirror natural ones?",
+            "What principles of nature can guide technology?",
+            "How do we balance human needs with ecosystem health?"
           ],
           examples: [
-            "Expert decision-making",
-            "Creative problem-solving",
-            "Emergency responses"
+            "Permaculture design",
+            "Biomimicry in architecture",
+            "Regenerative agriculture"
           ],
-          insights: "Intuition draws on deep experience and pattern recognition beyond conscious awareness."
+          insights: "Human systems can be designed to enhance rather than deplete natural systems."
         }
       ]
     },
-    transcendence: "Integrated Decision Making"
+    transcendence: "Living Systems Integration"
   }
 };
