@@ -5,11 +5,21 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write # Add this line to give write permissions
+  pages: write    # Also add this
+  id-token: write # And this for authentication
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -25,13 +35,14 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /SystemsUnity
 
-      - name: Add .nojekyll file
-        run: |
-          touch out/.nojekyll
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: './out'
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: out
-          clean: true
-          force: true
+        id: deployment
+        uses: actions/deploy-pages@v2
