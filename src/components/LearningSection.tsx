@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Book, ChevronRight, ChevronLeft, Lightbulb, Users, Target } from 'lucide-react';
 import { learningPaths } from '@/lib/learn/paths';
-import type { Challenge, LearningModule, LearningPath } from '@/lib/learn/types';
 
 const LearningSection = () => {
   const [selectedPath, setSelectedPath] = useState<string | null>(null);

@@ -2,15 +2,10 @@
 
 import React, { useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { 
   Map, 
   Book, 
   Users, 
-  Activity,
-  ChevronRight,
-  ZoomIn, 
-  ZoomOut,
   Hammer
 } from 'lucide-react';
 import { explorerData } from '@/lib/explorer/data';
