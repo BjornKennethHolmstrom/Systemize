@@ -309,5 +309,124 @@ export const explorerData: Record<string, StreamData> = {
       ]
     },
     transcendence: "Holistic Understanding"
+  },
+  'belief-systems': {
+    title: "Belief Systems",
+    description: "Exploring different approaches to understanding existence and reality",
+    stream1: {
+      name: "Traditional Ways of Knowing",
+      color: "#8b5cf6",
+      concepts: [
+        {
+          id: "mystical",
+          x: 200,
+          y: 165,
+          label: "Mystical Experience",
+          reflectionPrompts: [
+            "How do direct experiences shape our understanding of reality?",
+            "What role does personal experience play in knowledge?",
+            "How can subjective experiences inform objective understanding?"
+          ],
+          examples: [
+            "Meditation experiences",
+            "Religious revelations",
+            "Peak experiences"
+          ],
+          insights: "Direct experience offers unique insights that complement other ways of knowing."
+        },
+        {
+          id: "traditional",
+          x: 300,
+          y: 130,
+          label: "Traditional Knowledge",
+          reflectionPrompts: [
+            "How do traditional systems preserve and transmit wisdom?",
+            "What can we learn from ancient understanding?",
+            "How do different cultures approach similar questions?"
+          ],
+          examples: [
+            "Indigenous knowledge systems",
+            "Religious traditions",
+            "Cultural practices"
+          ],
+          insights: "Traditional knowledge systems often contain deep wisdom about human experience and reality."
+        }
+      ]
+    },
+    stream2: {
+      name: "Modern Approaches",
+      color: "#22c55e",
+      concepts: [
+        {
+          id: "scientific",
+          x: 350,
+          y: 200,
+          label: "Scientific Method",
+          reflectionPrompts: [
+            "How does empirical observation help us understand reality?",
+            "What are the limits of scientific knowledge?",
+            "How can science and other ways of knowing complement each other?"
+          ],
+          examples: [
+            "Physics theories",
+            "Cosmological models",
+            "Empirical research"
+          ],
+          insights: "Scientific methods provide powerful tools for understanding reality while acknowledging their own limitations."
+        }
+      ]
+    },
+    transcendence: "Integrated Understanding"
+  },
+  'decision-making': {
+    title: "Decision Making",
+    description: "Understanding how different factors influence our decisions and choices",
+    stream1: {
+      name: "Conscious Processing",
+      color: "#3b82f6",
+      concepts: [
+        {
+          id: "rational",
+          x: 200,
+          y: 150,
+          label: "Rational Analysis",
+          reflectionPrompts: [
+            "How do we balance logic with other decision-making factors?",
+            "When is rational analysis most useful?",
+            "What are the limits of pure rationality?"
+          ],
+          examples: [
+            "Cost-benefit analysis",
+            "Strategic planning",
+            "Risk assessment"
+          ],
+          insights: "Rational analysis provides structure but works best when integrated with other ways of knowing."
+        }
+      ]
+    },
+    stream2: {
+      name: "Unconscious Processing",
+      color: "#8b5cf6",
+      concepts: [
+        {
+          id: "intuitive",
+          x: 400,
+          y: 200,
+          label: "Intuitive Judgment",
+          reflectionPrompts: [
+            "How does intuition complement rational thinking?",
+            "When should we trust our gut feelings?",
+            "How can we develop better intuition?"
+          ],
+          examples: [
+            "Expert decision-making",
+            "Creative problem-solving",
+            "Emergency responses"
+          ],
+          insights: "Intuition draws on deep experience and pattern recognition beyond conscious awareness."
+        }
+      ]
+    },
+    transcendence: "Integrated Decision Making"
   }
 };

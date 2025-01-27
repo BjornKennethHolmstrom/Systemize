@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # or your default branch
 
 jobs:
   deploy:
@@ -31,9 +31,10 @@ jobs:
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      # Use a different action for deployment
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          folder: out
-          branch: gh-pages
-          clean: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          force_orphan: true  # This creates a single commit on gh-pages branch

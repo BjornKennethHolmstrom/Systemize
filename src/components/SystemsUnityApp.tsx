@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { explorerData } from '@/lib/explorer/data';
 import ExplorerNavigation from '@/components/explorer/ExplorerNavigation';
-import FlowVisualization from '@/components/explorer/FlowVisualization';
+import TopicVisualization from '@/components/explorer/TopicVisualization';
 import LearningSection from '@/components/LearningSection';
 import ResourcesDisplay from '@/components/ResourcesDisplay';
 
@@ -85,12 +85,15 @@ const SystemsUnityApp = () => {
               selectedTopic={selectedTopic}
               onSelectTopic={setSelectedTopic}
             />
-            <FlowVisualization 
-              data={explorerData[selectedTopic]}
-              zoomLevel={zoomLevel}
-              onZoomIn={() => setZoomLevel(Math.min(2, zoomLevel + 0.1))}
-              onZoomOut={() => setZoomLevel(Math.max(0.5, zoomLevel - 0.1))}
-            />
+            {selectedTopic && (
+              <TopicVisualization
+                topicId={selectedTopic}
+                data={explorerData[selectedTopic]}
+                zoomLevel={zoomLevel}
+                onZoomIn={() => setZoomLevel(Math.min(2, zoomLevel + 0.1))}
+                onZoomOut={() => setZoomLevel(Math.max(0.5, zoomLevel - 0.1))}
+              />
+            )}
           </div>
         )}
 
