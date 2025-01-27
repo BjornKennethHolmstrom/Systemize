@@ -2,18 +2,16 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main  # or your default branch
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -26,15 +24,14 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /SystemsUnity
-          NODE_ENV: production
 
       - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
+        run: |
+          touch out/.nojekyll
 
-      # Use a different action for deployment
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
-          force_orphan: true  # This creates a single commit on gh-pages branch
+          folder: out
+          clean: true
+          force: true
