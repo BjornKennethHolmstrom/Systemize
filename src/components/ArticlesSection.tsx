@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { ScrollText, CircuitBoard, Workflow } from 'lucide-react';
+import SpiralDynamicsArticle from '@/components/articles/SpiralDynamicsArticle';
+import SystemsThinkingArticle from '@/components/articles/SystemsThinkingArticle';
+import NonDualityArticle from '@/components/articles/NonDualityArticle';
 
 interface Article {
   id: string;
