@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- Background -->
+  <rect width="900" height="600" fill="#f8fafc"/>
+  
+  <!-- Concept 1: Flowing Rivers -->
+  <g transform="translate(0, 0)">
+    <!-- Title -->
+    <text x="150" y="30" font-size="14" font-weight="bold" text-anchor="middle">Flow Streams</text>
+    
+    <!-- Streams -->
+    <path d="M 50 100 C 100 100, 150 50, 200 100 S 250 150, 300 100" 
+          fill="none" stroke="#3b82f6" stroke-width="20" opacity="0.6"/>
+    <path d="M 50 150 C 100 150, 150 200, 200 150 S 250 100, 300 150" 
+          fill="none" stroke="#8b5cf6" stroke-width="20" opacity="0.6"/>
+    <!-- Connection Points -->
+    <circle cx="125" cy="125" r="10" fill="#1e3a8a"/>
+    <circle cx="225" cy="125" r="10" fill="#1e3a8a"/>
+  </g>
+  
+  <!-- Concept 2: Neural Network -->
+  <g transform="translate(300, 0)">
+    <!-- Title -->
+    <text x="150" y="30" font-size="14" font-weight="bold" text-anchor="middle">Neural Web</text>
+    
+    <!-- Nodes and Connections -->
+    <line x1="100" y1="80" x2="200" y2="120" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="100" y1="80" x2="150" y2="180" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="200" y1="120" x2="150" y2="180" stroke="#94a3b8" stroke-width="2"/>
+    
+    <circle cx="100" cy="80" r="20" fill="#22c55e" opacity="0.8"/>
+    <circle cx="200" cy="120" r="20" fill="#eab308" opacity="0.8"/>
+    <circle cx="150" cy="180" r="20" fill="#ec4899" opacity="0.8"/>
+  </g>
+  
+  <!-- Concept 3: Growing Garden -->
+  <g transform="translate(600, 0)">
+    <!-- Title -->
+    <text x="150" y="30" font-size="14" font-weight="bold" text-anchor="middle">Living Garden</text>
+    
+    <!-- Plants -->
+    <path d="M 150 200 C 150 150, 100 100, 150 50" 
+          fill="none" stroke="#22c55e" stroke-width="3"/>
+    <path d="M 150 200 C 150 150, 200 100, 150 50" 
+          fill="none" stroke="#22c55e" stroke-width="3"/>
+    <circle cx="150" cy="50" r="15" fill="#ec4899" opacity="0.8"/>
+    
+    <!-- Ground -->
+    <path d="M 50 200 Q 150 180 250 200" 
+          fill="none" stroke="#64748b" stroke-width="2"/>
+  </g>
+  
+  <!-- Second Row -->
+  <!-- Concept 4: Ripples -->
+  <g transform="translate(0, 300)">
+    <!-- Title -->
+    <text x="150" y="30" font-size="14" font-weight="bold" text-anchor="middle">Thought Ripples</text>
+    
+    <!-- Ripple Circles -->
+    <circle cx="150" cy="125" r="80" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.3"/>
+    <circle cx="150" cy="125" r="60" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
+    <circle cx="150" cy="125" r="40" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.7"/>
+    <circle cx="150" cy="125" r="20" fill="#3b82f6" opacity="0.9"/>
+  </g>
+  
+  <!-- Concept 5: Crystal Structure -->
+  <g transform="translate(300, 300)">
+    <!-- Title -->
+    <text x="150" y="30" font-size="14" font-weight="bold" text-anchor="middle">Knowledge Crystal</text>
+    
+    <!-- Crystal Structure -->
+    <path d="M 150 50 L 100 100 L 150 150 L 200 100 Z" 
+          fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <path d="M 150 150 L 100 200 L 150 250 L 200 200 Z" 
+          fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="150" y1="50" x2="150" y2="250" stroke="#8b5cf6" stroke-width="2"/>
+  </g>
+  
+  <!-- Concept 6: Cosmic Map -->
+  <g transform="translate(600, 300)">
+    <!-- Title -->
+    <text x="150" y="30" font-size="14" font-weight="bold" text-anchor="middle">Cosmic Web</text>
+    
+    <!-- Star Nodes -->
+    <circle cx="150" cy="125" r="5" fill="#fbbf24"/>
+    <circle cx="100" cy="100" r="3" fill="#fbbf24"/>
+    <circle cx="200" cy="150" r="4" fill="#fbbf24"/>
+    <line x1="150" y1="125" x2="100" y2="100" stroke="#94a3b8" stroke-width="1" opacity="0.5"/>
+    <line x1="150" y1="125" x2="200" y2="150" stroke="#94a3b8" stroke-width="1" opacity="0.5"/>
+  </g>
+</svg>

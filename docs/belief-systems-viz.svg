@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Central Node -->
+  <circle cx="400" cy="300" r="50" fill="#3b82f6" opacity="0.9"/>
+  <text x="400" y="305" text-anchor="middle" fill="white" font-size="14">Origins of
+    <tspan x="400" y="320">Existence</tspan>
+  </text>
+  
+  <!-- Connection Lines -->
+  <path d="M 435 260 L 550 200" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M 450 300 L 650 300" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M 435 340 L 550 400" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M 365 260 L 250 200" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M 350 300 L 150 300" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M 365 340 L 250 400" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Nodes -->
+  <!-- Scientific -->
+  <circle cx="550" cy="200" r="40" fill="#22c55e" opacity="0.8"/>
+  <text x="550" y="205" text-anchor="middle" fill="white" font-size="12">Scientific
+    <tspan x="550" y="220">Big Bang</tspan>
+  </text>
+  
+  <!-- Religious -->
+  <circle cx="650" cy="300" r="40" fill="#eab308" opacity="0.8"/>
+  <text x="650" y="305" text-anchor="middle" fill="white" font-size="12">Divine
+    <tspan x="650" y="320">Creation</tspan>
+  </text>
+  
+  <!-- Indigenous -->
+  <circle cx="550" cy="400" r="40" fill="#ec4899" opacity="0.8"/>
+  <text x="550" y="405" text-anchor="middle" fill="white" font-size="12">Indigenous
+    <tspan x="550" y="420">Mythology</tspan>
+  </text>
+  
+  <!-- Philosophical -->
+  <circle cx="250" cy="200" r="40" fill="#8b5cf6" opacity="0.8"/>
+  <text x="250" y="205" text-anchor="middle" fill="white" font-size="12">Philosophical
+    <tspan x="250" y="220">First Cause</tspan>
+  </text>
+  
+  <!-- Mystical -->
+  <circle cx="150" cy="300" r="40" fill="#f97316" opacity="0.8"/>
+  <text x="150" y="305" text-anchor="middle" fill="white" font-size="12">Mystical
+    <tspan x="150" y="320">Experience</tspan>
+  </text>
+  
+  <!-- Psychological -->
+  <circle cx="250" cy="400" r="40" fill="#06b6d4" opacity="0.8"/>
+  <text x="250" y="405" text-anchor="middle" fill="white" font-size="12">Psychological
+    <tspan x="250" y="420">Meaning</tspan>
+  </text>
+  
+  <!-- Intersection Points -->
+  <circle cx="400" cy="200" r="15" fill="#64748b" opacity="0.6"/>
+  <circle cx="400" cy="400" r="15" fill="#64748b" opacity="0.6"/>
+  <circle cx="300" cy="300" r="15" fill="#64748b" opacity="0.6"/>
+  <circle cx="500" cy="300" r="15" fill="#64748b" opacity="0.6"/>
+</svg>
