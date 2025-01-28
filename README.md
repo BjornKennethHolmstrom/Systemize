@@ -1,6 +1,6 @@
-# Systems Unity
+# Systemize
 
-Systems Unity is an interactive web application designed to help users develop systems thinking and explore interconnected perspectives. The app facilitates understanding complex relationships between different modes of thinking and helps users naturally develop more integrated worldviews.
+Systemize is an interactive web application designed to help users develop systems thinking and explore interconnected perspectives. The app facilitates understanding complex relationships between different modes of thinking and helps users naturally develop more integrated worldviews.
 
 ## Features
 
@@ -45,4 +45,4 @@ Systems Unity is an interactive web application designed to help users develop s
 ### Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/BjornKennethHolmstrom/SystemsUnity.git
+git clone https://github.com/BjornKennethHolmstrom/Systemize.git
